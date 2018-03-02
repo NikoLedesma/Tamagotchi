@@ -13,27 +13,27 @@ public class VirtualPetApp {
 
         System.out.println("+++++++++++++++++++++++++(happy state)+++++++++++++++++++++++++");
         VirtualPetState happyState = new HappyStateVirtual();
-        electronicDevice.giveDrinkToPet(happyState);
-        electronicDevice.giveFoodToPet(happyState);
-        electronicDevice.giveLoveToPet(happyState);
+        electronicDevice.giveDrinkToVirtualPet(happyState);
+        electronicDevice.giveFoodToVirtualPet(happyState);
+        electronicDevice.giveLoveToVirtualPet(happyState);
 
         System.out.println("+++++++++++++++++++++++++(hungry state)+++++++++++++++++++++++++");
         VirtualPetState hungryState = new HungryStateVirtual();
-        electronicDevice.giveDrinkToPet(hungryState);
-        electronicDevice.giveFoodToPet(hungryState);
-        electronicDevice.giveLoveToPet(hungryState);
+        electronicDevice.giveDrinkToVirtualPet(hungryState);
+        electronicDevice.giveFoodToVirtualPet(hungryState);
+        electronicDevice.giveLoveToVirtualPet(hungryState);
 
         System.out.println("+++++++++++++++++++++++++(sad state)+++++++++++++++++++++++++");
         VirtualPetState sadState = new SadStateVirtual();
-        electronicDevice.giveDrinkToPet(sadState);
-        electronicDevice.giveFoodToPet(sadState);
-        electronicDevice.giveLoveToPet(sadState);
+        electronicDevice.giveDrinkToVirtualPet(sadState);
+        electronicDevice.giveFoodToVirtualPet(sadState);
+        electronicDevice.giveLoveToVirtualPet(sadState);
 
         System.out.println("+++++++++++++++++++++++++(thirsty state)+++++++++++++++++++++++++");
         VirtualPetState thirstyState = new ThirstyStateVirtual();
-        electronicDevice.giveDrinkToPet(thirstyState);
-        electronicDevice.giveFoodToPet(thirstyState);
-        electronicDevice.giveLoveToPet(thirstyState);
+        electronicDevice.giveDrinkToVirtualPet(thirstyState);
+        electronicDevice.giveFoodToVirtualPet(thirstyState);
+        electronicDevice.giveLoveToVirtualPet(thirstyState);
     }
 
 }

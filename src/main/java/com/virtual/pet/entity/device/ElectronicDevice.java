@@ -10,46 +10,46 @@ public class ElectronicDevice implements StimulableCommand ,HardwareCommand {
 
     private Buzzer buzzer;
     private Display display;
-    private VirtualPet pet;
+    private VirtualPet virtualPet;
 
     public ElectronicDevice(){
         this.buzzer = new Buzzer();
         this.display = new Display();
-        this.pet = new VirtualPet(this);
+        this.virtualPet = new VirtualPet(this);
     }
 
 
 
-    public void giveFoodToPet(){
-        this.pet.eat();
+    public void giveFoodToVirtualPet(){
+        this.virtualPet.eat();
     }
 
-    public void giveDrinkToPet(){
-        this.pet.drink();
+    public void giveDrinkToVirtualPet(){
+        this.virtualPet.drink();
     }
 
-    public void giveLoveToPet(){
-        this.pet.recvLove();
+    public void giveLoveToVirtualPet(){
+        this.virtualPet.recvLove();
     }
 
-    public void giveFoodToPet(VirtualPetState virtualPetState){
-        this.pet.setState(virtualPetState);
-        this.pet.eat();
+    public void giveFoodToVirtualPet(VirtualPetState virtualPetState){
+        this.virtualPet.setState(virtualPetState);
+        this.virtualPet.eat();
     }
 
-    public void giveDrinkToPet(VirtualPetState virtualPetState){
-        this.pet.setState(virtualPetState);
-        this.pet.drink();
+    public void giveDrinkToVirtualPet(VirtualPetState virtualPetState){
+        this.virtualPet.setState(virtualPetState);
+        this.virtualPet.drink();
     }
 
-    public void giveLoveToPet(VirtualPetState virtualPetState){
-        this.pet.setState(virtualPetState);
-        this.pet.recvLove();
+    public void giveLoveToVirtualPet(VirtualPetState virtualPetState){
+        this.virtualPet.setState(virtualPetState);
+        this.virtualPet.recvLove();
     }
 
 
     public void displayShowPetVomiting() {
-        System.out.println("ElectronicDevice: show pet vomiting on display!!!");
+        System.out.println("ElectronicDevice: show virtualPet vomiting on display!!!");
         this.display.showPetVomiting();
     }
 
