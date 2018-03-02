@@ -2,36 +2,35 @@ package com.virtual.pet;
 
 import com.virtual.pet.entity.device.ElectronicDevice;
 import com.virtual.pet.entity.device.StimulableCommand;
-import com.virtual.pet.entity.states.*;
+import com.virtual.pet.entity.pet.states.*;
 
-import static java.lang.System.out;
+
 
 public class VirtualPetApp {
 
     public static void main(String[] args) {
         StimulableCommand electronicDevice = new ElectronicDevice();
-        Integer i = 1;
 
-        out.println(i++ + "  happy state)");
-        PetState happyState = new HappyState();
+        System.out.println("+++++++++++++++++++++++++(happy state)+++++++++++++++++++++++++");
+        VirtualPetState happyState = new HappyStateVirtual();
         electronicDevice.giveDrinkToPet(happyState);
         electronicDevice.giveFoodToPet(happyState);
         electronicDevice.giveLoveToPet(happyState);
 
-        out.println(i++ + "  hungry state)");
-        PetState hungryState = new HungryState();
+        System.out.println("+++++++++++++++++++++++++(hungry state)+++++++++++++++++++++++++");
+        VirtualPetState hungryState = new HungryStateVirtual();
         electronicDevice.giveDrinkToPet(hungryState);
         electronicDevice.giveFoodToPet(hungryState);
         electronicDevice.giveLoveToPet(hungryState);
 
-        out.println(i++ + "  sad state)");
-        PetState sadState = new SadState();
+        System.out.println("+++++++++++++++++++++++++(sad state)+++++++++++++++++++++++++");
+        VirtualPetState sadState = new SadStateVirtual();
         electronicDevice.giveDrinkToPet(sadState);
         electronicDevice.giveFoodToPet(sadState);
         electronicDevice.giveLoveToPet(sadState);
 
-        out.println(i++ + "  thirsty state)");
-        PetState thirstyState = new ThirstyState();
+        System.out.println("+++++++++++++++++++++++++(thirsty state)+++++++++++++++++++++++++");
+        VirtualPetState thirstyState = new ThirstyStateVirtual();
         electronicDevice.giveDrinkToPet(thirstyState);
         electronicDevice.giveFoodToPet(thirstyState);
         electronicDevice.giveLoveToPet(thirstyState);

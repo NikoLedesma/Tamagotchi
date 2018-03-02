@@ -1,6 +1,6 @@
 package com.virtual.pet.entity.device;
 
-import com.virtual.pet.entity.states.PetState;
+import com.virtual.pet.entity.pet.states.VirtualPetState;
 
 public interface StimulableCommand {
 
@@ -10,9 +10,9 @@ public interface StimulableCommand {
 
     public void giveLoveToPet();
 
-    public void giveFoodToPet(PetState petState);
+    public void giveFoodToPet(VirtualPetState virtualPetState);
 
-    public void giveDrinkToPet(PetState petState);
+    public void giveDrinkToPet(VirtualPetState virtualPetState);
 
-    public void giveLoveToPet(PetState petState);
+    public void giveLoveToPet(VirtualPetState virtualPetState);
 }

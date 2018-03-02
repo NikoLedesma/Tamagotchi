@@ -1,4 +1,4 @@
-package com.virtual.pet.entity.device;
+package com.virtual.pet.entity.device.HardwareModule;
 
 import java.awt.*;
 
